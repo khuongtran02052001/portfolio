@@ -57,6 +57,7 @@ const ProjectCard: ComponentProjectCard = props => {
               <Link
                 href={github_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                aria-label="Github"
               >
                 <AiFillGithub /> <span>Github</span>
               </Link>
