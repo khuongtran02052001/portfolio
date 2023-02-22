@@ -6,13 +6,13 @@ import { fadeUp, stagger } from "../animation/animation";
 import { IService } from '../type'
 
 interface IDataProps {
-  data: IService[]
+  service: IService[]
 }
 
 interface IComponentHome extends React.FC<IDataProps> { }
 
 const Home: IComponentHome = props => {
-  const { data: service } = props
+  const { service } = props
 
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
@@ -57,11 +57,10 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async () => {
 
-  const res = await fetch('https://tranduykhuong-alpha.vercel.app/api/sevices')
-  const posts = await res.json()
+  const res = await fetch('https://tranduykhuong-alpha.vercel.app/api/sevices').then(value => value.json())
   return {
     props: {
-      data: posts.service,
+      service: res.service,
     },
     fallback: false
   };
