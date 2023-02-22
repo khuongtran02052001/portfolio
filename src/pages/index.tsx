@@ -56,7 +56,7 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async () => {
 
-  const res = await fetch('https://tranduykhuong-alpha.vercel.app/api/sevices')
+  const res = await fetch('http:/localhost:3000/api/sevices')
   const posts = await res.json()
   return {
     props: {
