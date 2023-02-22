@@ -1,7 +1,7 @@
 import React from "react";
 import Bar from "../components/Bar";
-import { motion } from "framer-motion";
 import Head from "next/head";
+import { motion } from "framer-motion";
 import { fadeUp, routeAnimation } from "../animation/animation";
 import { GetServerSideProps } from "next";
 import { Iskill } from "@/type";

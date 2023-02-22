@@ -6,7 +6,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <Link rel="preconnect" href="https://fonts.gstatic.com" />
+          <Link rel="preconnect" href="https://fonts.gstatic.com" aria-label="font"/>
           <meta name="google-site-verification" content="3kYzG52_FPmJmGNDQfhOXmHVxDdxDIU48qVTitPizZo" />
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
