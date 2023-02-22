@@ -13,7 +13,7 @@ interface ComponentNavItem extends React.FC<INavItemProps> { }
 
 const NavItem: ComponentNavItem = ({ active, setActive, name, route }) => {
   return active !== name ? (
-    <Link href={route} legacyBehavior>
+    <Link href={route} legacyBehavior aria-label={`${name}`}>
       <span
         className="mx-2 cursor-pointer hover:border-b-4 hover:text-indigo-500"
         onClick={() => setActive(name)}
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold text-blue-800 border-b-4 border-green md:text-2xl">
+      <span className="text-xl font-bold text-blue-800 dark:text-violet-300 border-b-4 border-green dark:border-violet-200 md:text-2xl">
         {active}
       </span>
       <div className="flex space-x-5 text-lg ">

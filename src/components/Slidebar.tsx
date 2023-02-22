@@ -61,7 +61,7 @@ export default function Slidebar() {
         quality="100"
       />
       <p className="my-4 font-medium tracking-wider ">
-        <span className="mx-2 text-indigo-700 text-[22px]">{word}</span>
+        <span className="mx-2 text-indigo-700 dark:text-violet-50 text-[22px]">{word}</span>
       </p>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">
         Web Developer
@@ -74,7 +74,7 @@ export default function Slidebar() {
         <GiTie className="w-6 h-6" />
         Download Resume
       </a>
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-indigo-700 md:w-full">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-indigo-700 dark:text-violet-300 md:w-full">
         <a
           href="https://www.facebook.com/khuonggggggggg/"
           aria-label="Facebook"
