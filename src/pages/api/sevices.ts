@@ -13,32 +13,12 @@ export default getService
 
 const service: IService[] = [
     {
-        title: "Fontend Dev",
-        about: "lorem...",
+        title: "Intern",
+        about: "Chanhly Solution and Technology",
     },
     // 2
     {
-        title: "Fontend Dev",
-        about: "lorem...",
-    },
-    // 3
-    {
-        title: "Fontend Dev",
-        about: "lorem...",
-    },
-    // 4
-    {
-        title: "Fontend Dev",
-        about: "lorem...",
-    },
-    // 5
-    {
-        title: "Fontend Dev",
-        about: "lorem...",
-    },
-    // 6
-    {
-        title: "Fontend Dev",
-        about: "lorem...",
+        title: "Fresher",
+        about: "CÔNG TY CỔ PHẦN CÔNG NGHỆ BẤT ĐỘNG SẢN MGI",
     },
 ];

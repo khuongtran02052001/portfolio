@@ -12,9 +12,11 @@ const ServiceCard: ComponentServiceCard = ({
 }) => {
 
   return (
-    <div className="flex items-center p-4 space-x-4">
-      <p className="font-bold">{title}</p>
-      <p >{about}</p>
+    <div className="flex items-center p-8">
+      <div>
+        <p className="font-bold text-xl">{title}</p>
+        <p className="text-sm">{about}</p>
+      </div>
     </div>
   );
 };
