@@ -70,6 +70,7 @@ export default function Slidebar() {
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-500 "
         href="/image/mycv.pdf"
         download={'TranDuyKhuong-Resume'}
+        aria-label="down load resume"
       >
         <GiTie className="w-6 h-6" />
         Download Resume
