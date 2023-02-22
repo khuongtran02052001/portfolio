@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCircleFill } from "react-icons/bs";
 import { Iskill } from "../type";
 import { motion } from "framer-motion";
 
@@ -10,7 +11,7 @@ interface ComponentBar extends React.FC<IPropsBar> { }
 
 const Bar: ComponentBar = props => {
   const { data } = props
-  const { Icon, level, name } = data
+  const { level, name } = data
   const bar_width = `${level}`;
 
   const variants = {
@@ -36,7 +37,7 @@ const Bar: ComponentBar = props => {
         initial="initial"
         animate="animate"
       >
-        <Icon className="mr-3" />
+        <BsCircleFill className="mr-3" />
 
         {name}
       </motion.div>

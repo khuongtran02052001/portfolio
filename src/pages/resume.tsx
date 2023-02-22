@@ -1,10 +1,20 @@
 import React from "react";
 import Bar from "../components/Bar";
-import { languages, tools } from "../data";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { fadeUp, routeAnimation } from "../animation/animation";
-const Resume: React.FC = () => {
+import { GetServerSideProps } from "next";
+import { Iskill } from "@/type";
+
+interface IPropsData {
+  tools: Iskill[],
+  languages: Iskill[]
+}
+
+interface ComponentsResume extends React.FC<IPropsData> { }
+
+const Resume: ComponentsResume = props => {
+  const { languages, tools } = props
   return (
     <motion.div
       variants={routeAnimation}
@@ -34,15 +44,13 @@ const Resume: React.FC = () => {
           <p className="my-3 text-2xl font-bold">Experience</p>
           <div className="">
             <p className="my-2 text-xl font-base">Junior Developer DK</p>
-            {/* <p className="font-semibold"></p> */}
             <p className="my-3">I&apos;m just an junior now</p>
           </div>
         </motion.div>
       </div>
 
       {/* languages && tool */}
-
-      <div className="grid gap-9 md:grid-cols-2">
+      <div className="grid gap-9 md:grid-cols-2 max-h-[300px] overflow-y-scroll no-scrollbar">
         <div>
           <p className="my-3 text-2xl font-bold">
             Languages &amp; Frameworks
@@ -66,3 +74,20 @@ const Resume: React.FC = () => {
   );
 }
 export default Resume
+
+export const getServerSideProps: GetServerSideProps = async () => {
+
+  const [arrTool, arrLanguages] = await Promise.all([
+    fetch('https://tranduykhuong-alpha.vercel.app/api/tools').then(value => value.json()),
+    fetch('https://tranduykhuong-alpha.vercel.app/api/languages').then(value => value.json())
+  ])
+
+  if (!arrTool || !arrLanguages) return { notFound: true }
+
+  return {
+    props: {
+      tools: arrTool.tools,
+      languages: arrLanguages.languages
+    },
+  }
+};

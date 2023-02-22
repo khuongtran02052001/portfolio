@@ -62,7 +62,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {
       data: posts.service,
-      fallback: false
     },
+    fallback: false
   };
 };

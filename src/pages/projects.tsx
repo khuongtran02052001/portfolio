@@ -4,10 +4,17 @@ import ProjectsNavbar from "../components/ProjectsNavbar";
 import Head from 'next/head'
 import { motion } from "framer-motion";
 import { fadeUp, routeAnimation, stagger } from "../animation/animation";
-import { projects as projectsState } from "../data";
-import { Category } from "../type";
+import { Category, Iproject } from "../type";
+import { GetServerSideProps } from "next";
 
-const Projects: React.FC = () => {
+interface IDataProps {
+  projectsState: Iproject[]
+}
+
+interface ComponentProjects extends React.FC<IDataProps> { }
+
+const Projects: ComponentProjects = props => {
+  const { projectsState } = props
   const [projects, setProjects] = React.useState(projectsState);
   const [active, setActive] = React.useState("all");
   const [showDetail, setShowDetail] = React.useState<number | null>(null);
@@ -71,3 +78,16 @@ const Projects: React.FC = () => {
 }
 
 export default Projects
+
+export const getServerSideProps: GetServerSideProps = async () => {
+
+  const res = await fetch('https://tranduykhuong-alpha.vercel.app/api/projects').then(value => value.json())
+
+  if (!res) return { notFound: true }
+
+  return {
+    props: {
+      projectsState: res.projects,
+    },
+  }
+};

@@ -12,15 +12,14 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta name="theme-color" content="#317EFB" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="vi_VN" />
           <meta property="og:site_name" content="This website I made to train myself as well as want the employer to see my personal information, to see if I am suitable for the job, thank you for reading" />
           <meta name="description" content='This website I made to train myself as well as want the employer to see my personal information, to see if I am suitable for the job, thank you for reading.' />
           <meta property="og:description" content='This website I made to train myself as well as want the employer to see my personal information, to see if I am suitable for the job, thank you for reading.' />
-          <meta property="og:url" content='https://tranduykhuong-alpha.vercel.app/' />
+          <meta property="og:url" content='https://tranduykhuong-alpha.vercel.app' />
           <meta property="og:image" content='https://res.cloudinary.com/dsqlqtyyp/image/upload/v1677069030/Mern-2022/303F6537-2C19-4157-B025-96BB974092F6_1_105_c_d7wcmz.jpg' />
-          <meta property="og:image:alt" content="https://tranduykhuong-alpha.vercel.app/" />
+          <meta property="og:image:alt" content="https://tranduykhuong-alpha.vercel.app" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="800" />
           <meta property="og:image:height" content="600" />

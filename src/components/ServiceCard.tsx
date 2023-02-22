@@ -8,12 +8,11 @@ interface IServiceCardProps {
 interface ComponentServiceCard extends React.FC<IServiceCardProps> { }
 
 const ServiceCard: ComponentServiceCard = ({
-  services: { Icon, about, title },
+  services: { about, title },
 }) => {
 
   return (
     <div className="flex items-center p-4 space-x-4">
-      {/* <Icon className="w-12 h-12 text-green" /> */}
       <div>
         <p className="font-bold">{title}</p>
         <p >{about}</p>
