@@ -5,6 +5,7 @@ import { Iproject } from "../type";
 import { MdClose } from "react-icons/md";
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from "../animation/animation";
+import Link from "next/link";
 
 interface IPropsProject {
   projectsData: Iproject;
@@ -53,18 +54,17 @@ const ProjectCard: ComponentProjectCard = props => {
               />
             </motion.div>
             <motion.div variants={fadeUp} className="flex justify-center my-4 space-x-3">
-              <a
+              <Link
                 href={github_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
-              </a>
-              <a
-                href={deploy_url}
+              </Link>
+              <Link href={deploy_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillProject /> <span>Project</span>
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
 

@@ -15,7 +15,7 @@ const ServiceCard: ComponentServiceCard = ({
     <div className="flex items-center p-4 space-x-4">
       {/* <Icon className="w-12 h-12 text-green" /> */}
       <div>
-        <h5 className="font-bold">{title}</h5>
+        <p className="font-bold">{title}</p>
         <p >{about}</p>
       </div>
     </div>

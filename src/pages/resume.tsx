@@ -19,9 +19,9 @@ const Resume: React.FC = () => {
       {/* exp */}
       <div className="grid gap-6 md:grid-cols-2">
         <motion.div variants={fadeUp} initial="initial" animate="animate">
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
+          <p className="my-3 text-2xl font-bold">Education</p>
           <div className="">
-            <h5 className="my-2 text-xl font-base">Web Programming</h5>
+            <p className="my-2 text-xl font-base">Web Programming</p>
             <p className="font-semibold">Ly Tu Trong (2020-2021)</p>
             <p className="my-3">
               I am currently pursuing Ly Tu Trong in Web Programming from social
@@ -30,9 +30,9 @@ const Resume: React.FC = () => {
           </div>
         </motion.div>
         <motion.div variants={fadeUp} initial="initial" animate="animate">
-          <h5 className="my-3 text-2xl font-bold">Experience</h5>
+          <p className="my-3 text-2xl font-bold">Experience</p>
           <div className="">
-            <h5 className="my-2 text-xl font-base">Junior Developer DK</h5>
+            <p className="my-2 text-xl font-base">Junior Developer DK</p>
             {/* <p className="font-semibold"></p> */}
             <p className="my-3">I&apos;m just an junior now</p>
           </div>
@@ -43,9 +43,9 @@ const Resume: React.FC = () => {
 
       <div className="grid gap-9 md:grid-cols-2">
         <div>
-          <h5 className="my-3 text-2xl font-bold">
+          <p className="my-3 text-2xl font-bold">
             Languages &amp; Frameworks
-          </h5>
+          </p>
           <div className="my-2">
             {languages.map((lg, i) => (
               <Bar data={lg} key={i} />
@@ -53,7 +53,7 @@ const Resume: React.FC = () => {
           </div>
         </div>
         <div>
-          <h5 className="my-3 text-2xl font-bold">Tools &amp; Library </h5>
+          <p className="my-3 text-2xl font-bold">Tools &amp; Library </p>
           <div className="my-2">
             {tools.map((tool, i) => (
               <Bar data={tool} key={i} />

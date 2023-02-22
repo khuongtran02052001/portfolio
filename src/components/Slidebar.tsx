@@ -60,9 +60,9 @@ export default function Slidebar() {
         alt="user avatar"
         quality="100"
       />
-      <h3 className="my-4 font-medium tracking-wider ">
+      <p className="my-4 font-medium tracking-wider ">
         <span className="mx-2 text-indigo-700 text-[22px]">{word}</span>
-      </h3>
+      </p>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">
         Web Developer
       </p>
@@ -113,6 +113,7 @@ export default function Slidebar() {
       </button>
       <button
         className="w-8/12 px-5 py-2 my-2 rounded-full bg-gradient-to-r from-green-400 to-blue-400 dark:text-red-400 text-dark-500"
+        aria-label="Change theme"
       >
         <p className="flex justify-center">{changedTheme()}</p>
       </button>

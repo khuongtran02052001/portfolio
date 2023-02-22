@@ -14,14 +14,12 @@ interface ComponentNavItem extends React.FC<INavItemProps> { }
 const NavItem: ComponentNavItem = ({ active, setActive, name, route }) => {
   return active !== name ? (
     <Link href={route} legacyBehavior>
-      <a>
-        <span
-          className="mx-2 cursor-pointer hover:border-b-4 hover:text-indigo-500"
-          onClick={() => setActive(name)}
-        >
-          {name}
-        </span>
-      </a>
+      <span
+        className="mx-2 cursor-pointer hover:border-b-4 hover:text-indigo-500"
+        onClick={() => setActive(name)}
+      >
+        {name}
+      </span>
     </Link>
   ) : null;
 };

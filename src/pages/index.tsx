@@ -19,11 +19,11 @@ const Home: IComponentHome = props => {
       <Head>
         <title>Tran Duy Khuong | Home </title>
       </Head>
-      <h6 className="my-3 font-medium">
+      <p className="my-3 font-medium">
         Hi I&apos;m Tran Duy Khuong, I&apos;m a junior developer, I graduated ,
         thank you for visiting my site, I have completed a few projects, but in
         the future I will be better
-      </h6>
+      </p>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
@@ -56,7 +56,7 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async () => {
 
-  const res = await fetch('https://tranduykhuong-alpha.vercel.app/api/sevices')
+  const res = await fetch('http:/localhost:3000/api/sevices')
   const posts = await res.json()
   return {
     props: {
