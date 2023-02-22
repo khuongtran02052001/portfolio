@@ -43,7 +43,6 @@ export const service: IService[] = [
 
 export const languages: Iskill[] = [
 
-
   {
     name: "javascript",
     level: "60%",
