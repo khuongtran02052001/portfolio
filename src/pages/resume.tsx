@@ -15,6 +15,7 @@ const Resume: React.FC = () => {
     >
       <Head>
         <title>Tran Duy Khuong | Resume </title>
+        <meta name="description" content='This is a resume page to help people know more about me.' />
       </Head>
       {/* exp */}
       <div className="grid gap-6 md:grid-cols-2">

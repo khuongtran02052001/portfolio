@@ -17,6 +17,7 @@ const Home: IComponentHome = props => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
       <Head>
+        <meta name="description" content='This website I made to train myself as well as want the employer to see my personal information, to see if I am suitable for the job, thank you for reading.' />
         <title>Tran Duy Khuong | Home </title>
       </Head>
       <p className="my-3 font-medium">

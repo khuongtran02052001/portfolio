@@ -41,6 +41,7 @@ const Projects: React.FC = () => {
       />
       <Head>
         <title>Tran Duy Khuong | Projects </title>
+        <meta name="description" content='This is a project page to help people know what projects they have done.' />
       </Head>
       <motion.div
         variants={stagger}

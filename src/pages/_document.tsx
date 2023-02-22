@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="vi_VN" />
-          <meta property="og:site_name" content="Tổng hợp câu trả lời giải quyết vấn đề vấn đề" />
+          <meta property="og:site_name" content="This website I made to train myself as well as want the employer to see my personal information, to see if I am suitable for the job, thank you for reading" />
           <meta name="description" content='This website I made to train myself as well as want the employer to see my personal information, to see if I am suitable for the job, thank you for reading.' />
           <meta property="og:description" content='This website I made to train myself as well as want the employer to see my personal information, to see if I am suitable for the job, thank you for reading.' />
           <meta property="og:url" content='https://tranduykhuong-alpha.vercel.app/' />
